@@ -57,6 +57,10 @@ public final class PropsUtil {
 		return properties;
 	}
 	
+	
+	
+	
+	
 	/**
 	 * 获取字符串类型的属性，可以通过defaultValue指定默认值
 	 * @param properties
@@ -85,6 +89,76 @@ public final class PropsUtil {
 		return getString(properties, key, "");
 		
 	}
+	
+	
+	/**
+	 * 获取int型的属性，可以指定默认值
+	 * @param properties
+	 * @param key
+	 * @param defaultValue
+	 * @return
+	 */
+	public static int getInt(Properties properties, String key, int defaultValue) {
+		
+		int value = defaultValue;
+		if (properties.containsKey(key)) {
+			value = CastUtil.castInt(properties.getProperty(key));
+		}
+		
+		return value;
+		
+	}
+	
+	
+	/**
+	 * 获取int型的属性，默认值为0
+	 * @param properties
+	 * @param key
+	 * @return
+	 */
+	public static int getInt(Properties properties, String key) {
+		
+		return getInt(properties, key, 0);
+		
+	}
+	
+	
+	
+	/**
+	 * 获取bool类型的属性，可以指定默认值
+	 * @param properties
+	 * @param key
+	 * @param defaultValue
+	 * @return
+	 */
+	public static boolean getBoolean(Properties properties, String key, boolean defaultValue) {
+		
+		boolean value = defaultValue;
+		
+		if (properties.contains(key)) {
+			
+			value = CastUtil.castBoolean(properties.getProperty(key));
+			
+		}
+		
+		return value;
+	}
+	
+	
+	
+	/**
+	 * 获取bool类型的属性，默认值为false
+	 * @param properties
+	 * @param key
+	 * @return
+	 */
+	public static boolean getBoolean(Properties properties, String key) {
+		
+		return getBoolean(properties, key, false);
+		
+	}
+	
+	
 	
 	
 	
