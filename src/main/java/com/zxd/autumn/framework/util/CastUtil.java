@@ -60,7 +60,7 @@ public final class CastUtil {
 		if (object != null) {
 			String strValue = String.valueOf(object);
 			/**
-			 * 在某希望情况下，strValue可能是空字符串"  "，所以trim是必要的
+			 * 在某些情况下，strValue可能是空字符串"  "，所以trim是必要的
 			 */
 			if (!StringUtils.isEmpty(strValue.trim())) {
 				try {
@@ -68,6 +68,8 @@ public final class CastUtil {
 				} catch (Exception e) {
 					LOGGER.error("The configuration file is in the wrong format. "
 							+ "Please check it",e);
+					System.err.println("The configuration file is in the wrong format. "
+							+ "Please check it,exception:"+e);
 				}
 			}
 		}
@@ -102,7 +104,7 @@ public final class CastUtil {
 		if (object != null) {
 			String strValue = String.valueOf(object);
 			/**
-			 * 在某希望情况下，strValue可能是空字符串"  "，所以trim是必要的
+			 * 在某些情况下，strValue可能是空字符串"  "，所以trim是必要的
 			 */
 			if (!StringUtils.isEmpty(strValue.trim())) {
 				
@@ -111,6 +113,8 @@ public final class CastUtil {
 				} catch (Exception e) {
 					LOGGER.error("The configuration file is in the wrong format. "
 							+ "Please check it",e);
+					System.err.println("The configuration file is in the wrong format. "
+							+ "Please check it,exception:"+e);
 				}
 			}
 		}
@@ -149,7 +153,7 @@ public final class CastUtil {
 		if (object != null) {
 			String strValue = String.valueOf(object);
 			/**
-			 * 在某希望情况下，strValue可能是空字符串"  "，所以trim是必要的
+			 * 在某些情况下，strValue可能是空字符串"  "，所以trim是必要的
 			 */
 			if (!StringUtils.isEmpty(strValue.trim())) {
 				try {
@@ -158,6 +162,8 @@ public final class CastUtil {
 				} catch (Exception e) {
 					LOGGER.error("The configuration file is in the wrong format. "
 							+ "Please check it",e);
+					System.err.println("The configuration file is in the wrong format. "
+							+ "Please check it,exception:"+e);
 				}
 			}
 		}

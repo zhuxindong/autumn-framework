@@ -9,7 +9,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * 
- * 属性文件助手类，用来读取配置文件
+ * 属性文件助手类，封装了一些读取配置文件的通用方法
 * @author zhuxindong  E-mail:501801307@qq.com
 * @date 创建时间：2018年3月30日 下午2:54:15
 * @version 1.0
@@ -36,7 +36,8 @@ public final class PropsUtil {
 			is = Thread.currentThread().getContextClassLoader().getResourceAsStream(fileName);
 			
 			if (is == null) {
-				throw new FileNotFoundException(fileName+" file is not found");
+				LOGGER.error(fileName+" file is not found");
+				throw new FileNotFoundException(fileName+" file is not found");	
 			}
 			
 			properties = new Properties();
@@ -44,12 +45,14 @@ public final class PropsUtil {
 			
 		} catch (Exception e) {
 			LOGGER.error("Load Properties File Failure",e);
+			System.err.println("Load Properties File Failure,exception:"+e);
 		}finally {
 			if (is != null) {
 				try {
 					is.close();
 				} catch (Exception e2) {
 					LOGGER.error("Close Inputstream Failure",e2);
+					System.err.println("Close Inputstream Failure,exception:"+e2);
 				}
 			}
 		}

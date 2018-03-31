@@ -35,7 +35,7 @@ public interface ConfigConstant {
 	
 	String APP_JSP_PATH = "autumn.framework.app.jsp_path";
 	
-	String APP_ASSET_PATH = "autumn.framework.app.asset_path";
+	String APP_STATIC_PATH = "autumn.framework.app.static_path";
 			
 			
 	
