@@ -153,7 +153,9 @@ public class ClassUtil {
 
 	
 	private static void doAddClass(Set<Class<?>> classSet, String className) {
-		// TODO Auto-generated method stub
+		Class<?> cls = loadClass(className, false);
+		classSet.add(cls);
+		
 		
 	}
 

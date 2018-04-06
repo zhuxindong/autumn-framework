@@ -94,7 +94,7 @@ public class ConfigHelper {
 	/**
 	 * 获取静态资源路径，默认在/static/路径下
 	 */
-	public static String getAppAssetPath() {
+	public static String getAppStaticPath() {
 		
 		return PropsUtil.getString(CONFIG_PROPS, ConfigConstant.APP_STATIC_PATH,
 									"/static/");
