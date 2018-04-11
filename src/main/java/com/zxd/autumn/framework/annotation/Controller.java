@@ -13,8 +13,6 @@ import java.lang.annotation.Target;
 * @date 创建时间：2018年4月10日 下午10:12:03
 * @version 1.0
 */
-
-
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Controller {

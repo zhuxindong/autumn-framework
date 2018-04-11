@@ -1,15 +1,13 @@
 package com.zxd.autumn.framework;
 
-/**
-* @author zhuxindong  E-mail:501801307@qq.com
-* @date 创建时间：2018年3月30日 下午2:37:16
-* @version 1.0
-*/
 
 /**
- * 该接口提供相关配置项常量
- * @author zhuxindong
- *
+ * 
+ * @ClassName: ConfigConstant
+ * @Description: 该接口提供相关配置项常量
+ * @author zhuxindong E-mail:501801307@qq.com
+ * @date 创建时间：2018年3月30日 下午2:37:16
+ * @version 1.0
  */
 public interface ConfigConstant {
 	
