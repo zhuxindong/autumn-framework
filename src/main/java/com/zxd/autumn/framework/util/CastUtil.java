@@ -35,7 +35,10 @@ public final class CastUtil {
 	
 	
 	/**
-	 * 转换为string类型，默认值为空字符串
+	 * 
+	 * @Title: castString  
+	 * @Description: 转换为string类型，默认值为空字符串
+	 * @return String  
 	 * @param object
 	 * @return
 	 */
