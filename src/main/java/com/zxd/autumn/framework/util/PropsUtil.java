@@ -10,10 +10,10 @@ import org.slf4j.LoggerFactory;
 /**
  * 
  * 属性文件助手类，封装了一些读取配置文件的通用方法
-* @author zhuxindong  E-mail:501801307@qq.com
-* @date 创建时间：2018年3月30日 下午2:54:15
-* @version 1.0
-*/
+ * @author zhuxindong  E-mail:501801307@qq.com
+ * @date 创建时间：2018年3月30日 下午2:54:15
+ * @version 1.0
+ */
 public final class PropsUtil {
 	
 	/**
