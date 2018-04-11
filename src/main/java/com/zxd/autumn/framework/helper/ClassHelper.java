@@ -41,6 +41,8 @@ public final class ClassHelper {
 
 	/**
 	 * ---------向外提供相应的方法-------------
+	 * PS：这边方法不多，就不继续抽象了，要是有5个以上的方法，未来会在这边再做一层抽象
+	 * 比如 getClassSetByName(String xxxAnnotationName){...}
 	 */
 	
 	

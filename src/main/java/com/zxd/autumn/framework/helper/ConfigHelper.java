@@ -15,7 +15,7 @@ import com.zxd.autumn.framework.util.PropsUtil;
 * @version 1.0
 * @since 1.0.0
 */
-public class ConfigHelper {
+public final class ConfigHelper {
 	
 	/**
 	 * 加载配置文件，文件名为"autumn-framework"

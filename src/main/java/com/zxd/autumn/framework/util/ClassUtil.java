@@ -23,7 +23,7 @@ import org.slf4j.LoggerFactory;
 */
 
 
-public class ClassUtil {
+public final class ClassUtil {
 	
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(ClassUtil.class);
