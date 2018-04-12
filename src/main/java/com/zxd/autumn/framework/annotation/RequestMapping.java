@@ -6,9 +6,9 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
-* @Title: Action.java  
+* @Title: RequestMapping.java  
 * @Package com.zxd.autumn.framework.annotation  
-* @Description: 类似SpringMVC中的@RequestMap注解
+* @Description: 类似SpringMVC中的@RequestMapping注解
 * @author zhuxindong  E-mail:501801307@qq.com
 * @date 创建时间：2018年4月10日 下午10:25:47
 * @version 1.0
@@ -16,7 +16,7 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface RequestMap {
+public @interface RequestMapping {
 	
 	/**
 	 * @Title: value  
