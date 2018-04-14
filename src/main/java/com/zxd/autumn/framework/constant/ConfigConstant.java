@@ -1,4 +1,4 @@
-package com.zxd.autumn.framework;
+package com.zxd.autumn.framework.constant;
 
 
 /**

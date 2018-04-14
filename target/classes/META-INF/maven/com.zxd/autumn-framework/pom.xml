@@ -61,7 +61,7 @@
   	<!-- Jackson  json序列化框架-->
 	<dependency>
 	    <groupId>com.fasterxml.jackson.core</groupId>
-	    <artifactId>jackson-core</artifactId>
+	    <artifactId>jackson-databind</artifactId>
 	    <version>2.4.4</version>
 	</dependency>
   	
@@ -95,7 +95,6 @@
 	    <version>2.0.1</version>
 	</dependency>
   	
-  
   
     <dependency>
       <groupId>junit</groupId>

@@ -2,7 +2,7 @@ package com.zxd.autumn.framework.helper;
 
 import java.util.Properties;
 
-import com.zxd.autumn.framework.ConfigConstant;
+import com.zxd.autumn.framework.constant.ConfigConstant;
 import com.zxd.autumn.framework.util.PropsUtil;
 
 /**
